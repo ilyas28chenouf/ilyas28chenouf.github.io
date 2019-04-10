@@ -27,17 +27,218 @@
 	<link rel="stylesheet" href="css/responsive-rtl.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
 	<!-- Document Title
 	============================================= -->
 	<title>Tramaco</title>
 
 </head>
 
+<style>
+
+	.demos-filter {
+		margin: 0;
+		text-align: right;
+	}
+
+	.demos-filter li {
+		list-style: none;
+		margin: 10px 0px;
+	}
+
+	.demos-filter li a {
+		display: block;
+		border: 0;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #444;
+	}
+
+	.demos-filter li a:hover,
+	.demos-filter li.activeFilter a { color: #1ABC9C; }
+
+	@media (max-width: 991px) {
+		.demos-filter { text-align: center; }
+
+		.demos-filter li {
+			float: left;
+			width: 33.3%;
+			padding: 0 20px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.demos-filter li { width: 50%; }
+	}
+
+	.revo-slider-emphasis-text {
+		font-size: 64px;
+		font-weight: 700;
+		letter-spacing: -1px;
+		font-family: 'Raleway', sans-serif;
+		padding: 15px 20px;
+		border-top: 2px solid #FFF;
+		border-bottom: 2px solid #FFF;
+	}
+
+	.revo-slider-desc-text {
+		font-size: 20px;
+		font-family: 'Lato', sans-serif;
+		width: 650px;
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	.revo-slider-caps-text {
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: 3px;
+		font-family: 'Raleway', sans-serif;
+	}
+	.tp-video-play-button { display: none !important; }
+
+	.tp-caption { white-space: nowrap; }
+
+</style>
 <body class="stretched" >
 
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header semi-transparent dark full-header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="img/logo.png"><img src="img/logo.png" ></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="img/logo@2x.png"><img src="img/logo@2x.png" ></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+
+						<nav id="primary-menu">
+
+						  <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
+						    <li><a href="#" data-href="#home"><div>الرئيسية</div></a></li>
+						    <li><a href="#" data-href="#section-about"><div>معلومات عنا</div></a></li>
+						    <li><a href="#" data-href="#section-work"><div>عملنا</div></a></li>
+
+						    <li><a href="#" data-href="#section-services"><div>خدماتنا</div></a></li>
+
+						    <li><a href="#" data-href="#section-testimonials" data-offset="60"><div></div></a></li>
+
+						  </ul>
+
+						  <!-- Top Search
+						  ============================================= -->
+
+						</nav>
+
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="revslider-wrap clearfix">
+
+			<div class="rev_slider_wrapper">
+				<!-- START REVOLUTION SLIDER 5.0 auto mode -->
+				<div id="rev_slider" class="rev_slider"  data-version="5.0">
+					<ul>
+						<!-- SLIDE  -->
+						<li >
+
+							<!-- MAIN IMAGE -->
+							<img src="img/15.jpg"  alt=""  width="1920" height="1280">
+
+							<!-- LAYER NR. 1 -->
+							<div class="slider-caption testi-content slider-caption-center">
+								<h2 data-caption-animate="fadeInUp"  style="color:white"> مرحبا بك في Tramaco</h2>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200"  style="color:white;font-size:40px">افضل شركة شحن في تركيا  امان وسرعة وكفأة وجودة وضمان </p>
+							</div>
+
+
+						</li>
+
+						<!-- SLIDE  -->
+						<li >
+
+							<!-- MAIN IMAGE -->
+							<img src="img/4 (2).jpg"  alt=""  width="1920" height="1280">
+
+							<!-- LAYER NR. 1 -->
+							<div class="slider-caption slider-caption-center">
+								<h2 data-caption-animate="fadeInUp"  style="color:white">Welcome to Tramaco</h2>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200" style="color:white;font-size:40px">The best shipping company in Turkey is safe, fast, efficient, quality and guarantee</p>
+							</div>
+
+						</li>
+
+						<!-- SLIDE  -->
+						<li data-transition="fade">
+
+							<!-- MAIN IMAGE -->
+							<img src="img/8.jpg"  alt=""  width="1920" height="1280">
+
+							<!-- LAYER NR. 1 -->
+							<div class="slider-caption slider-caption-center">
+								<h2 data-caption-animate="fadeInUp"  style="color:white">Tramaco'ya Hoşgeldiniz</h2>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200" style="color:white;font-size:40px">Türkiye'nin en iyi nakliye şirketi güvenli, hızlı, verimli, kaliteli ve garantilidir</p>
+							</div>
+						</li>
+					</ul>
+				</div><!-- END REVOLUTION SLIDER -->
+			</div><!-- END REVOLUTION SLIDER WRAPPER -->
+
+		</section>
+
+		---------------------------------------------------
+		<div class="container clearfix">
+
+
+
+		  <ul class="header-extras">
+		    <li>
+		      <i class="i-plain icon-call nomargin"></i>
+		      <div class="he-text">
+		        اتصل بنا
+		        <span>00905370434552</span>
+		      </div>
+		    </li>
+		    <li>
+		      <i class="i-plain icon-line2-envelope nomargin"></i>
+		      <div class="he-text">
+		        البريد الإلكتروني لنا
+		        <span>hozayfa.tramaco.gmail.com</span>
+		      </div>
+		    </li>
+		    <li>
+		      <i class="i-plain icon-line-clock nomargin"></i>
+		      <div class="he-text">
+		      على مدار الاسبوع
+		        <span> من 10 صباحًا إلى 6 مساء</span>
+		      </div>
+		    </li>
+		  </ul>
+
+		</div>
 		<div id="top-bar">
 
 			<div class="container clearfix">
@@ -74,352 +275,55 @@
 			</div>
 
 		</div><!-- #top-bar end -->
-
-		<div class="container clearfix">
-
-			<!-- Logo
-			============================================= -->
-			<!-- <div id="logo">
-				<a href="index.html" class="standard-logo"><img src="" alt="Canvas Logo"></a>
-				<a href="index.html" class="retina-logo"><img src="" alt="Canvas Logo"></a>
-			</div> #logo end -->
-
-			<ul class="header-extras">
-				<li>
-					<i class="i-plain icon-call nomargin"></i>
-					<div class="he-text">
-						اتصل بنا
-						<span>00905370434552</span>
-					</div>
-				</li>
-				<li>
-					<i class="i-plain icon-line2-envelope nomargin"></i>
-					<div class="he-text">
-						البريد الإلكتروني لنا
-						<span>hozayfa.tramaco.gmail.com</span>
-					</div>
-				</li>
-				<li>
-					<i class="i-plain icon-line-clock nomargin"></i>
-					<div class="he-text">
-					على مدار الاسبوع
-						<span>الإثنين - السبت ، من 10 صباحًا إلى 6 مساءً</span>
-					</div>
-				</li>
-			</ul>
-
-		</div>
-		<div id="home" class="page-section" style="position:absolute;top:0;left:0;width:100%;height:200px;z-index:-2;"></div>
-
-		<section id="slider" class="slider-parallax full-screen with-header swiper_wrapper clearfix">
-
-			<div class="slider-parallax-inner">
-
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide dark" style="background-image: url('img/6 (2).jpg');">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h1 data-caption-animate="fadeInUp" ><span>TRAMACO</span>مرحبا بك في </h1>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">من خلال العمل المتفاني في خدمة العملاء على مدى سنوات عمل طويلة استطاعت الشركة كسب ثقة عملائها من خلال تقديم خدمات الشحن المتكاملة سواء الشحن الجوي والبري والبحري والتخليص الجمركي وبأقل الاسعار وبأسرع وسائل نقل واكثرها امانا على مستوى العالم.</p>
-								</div>
-							</div>
-						</div>
-						<!-- <div class="swiper-slide dark" style="background-image: url('img/2.jpg');">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Welcome to Canvas</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Create just what you need for your Perfect Website. Choose from a wide range of Elements &amp; simply put them on our Canvas.</p>
-								</div>
-							</div>
-						</div> -->
-						<div class="swiper-slide" style="background-image: url('img/4.jpg'); background-position: center top;">
-							<div class="container clearfix">
-								<div class="slider-caption">
-									<h2 data-caption-animate="fadeInUp"><span>TRAMACO</span>هنا </h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">من خلال العمل المتفاني في خدمة العملاء على مدى سنوات عمل طويلة استطاعت الشركة كسب ثقة عملائها من خلال تقديم خدمات الشحن المتكاملة سواء الشحن الجوي والبري والبحري والتخليص الجمركي وبأقل الاسعار وبأسرع وسائل نقل واكثرها امانا على مستوى العالم.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-					<div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div></div>
-				</div>
-
-			</div>
-
-		</section>
-
-		<!-- Header
-		============================================= -->
-		<header id="header" class="full-header">
-
-			<div id="header-wrap">
-
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="img/logo.png" alt="Canvas Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="img/logo@2x.png" alt="Canvas Logo"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu">
-
-						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
-							<li><a href="#" data-href="#home"><div>الرئيسية</div></a></li>
-							<li><a href="#" data-href="#section-about"><div>معلومات عنا</div></a></li>
-							<li><a href="#" data-href="#section-work"><div>عملنا</div></a></li>
-
-							<li><a href="#" data-href="#section-services"><div>خدماتنا</div></a></li>
-
-							<li><a href="#" data-href="#section-testimonials" data-offset="60"><div></div></a></li>
-
-						</ul>
-
-						<!-- Top Search
-						============================================= -->
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
-			</div>
-
-		</header><!-- #header end -->
-
-		<div class="clear"></div>
-
 		<!-- Content
 		============================================= -->
 		<section id="content">
 
 			<div class="content-wrap">
 
-				<section id="section-about" class="page-section">
 
-					<div class="container clearfix">
+					<div class="col_full bottommargin-lg common-height">
 
-						<div class="heading-block bottommargin-lg center">
-							<h2>من نحن.</h2>
-							<span>نحن على مدى سنوات عديدة من العمل الدؤوب الجاد، والخدمات ذات المستوى العالي في كلاً من الاردن  و تركيا، ومع وضع ارضاء عملائنا ضمن أولويات شركتنا، شركة TRAMACO İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ  تفتخر بكونها أفضل شركة شحن في تركيا اسطنبول لما تقدمه من خدمات الشحن المتكاملة الجوي والبري والبحري لكافة دول العالم بأسعار منافسة وجودة وكفاءة وسرعة وأمان في النقل</span>
+						<div class="col-lg-4 dark col-padding ohidden" style="background-color: #1abc9c;">
+							<div>
+								<h3 class="uppercase" style="font-weight: 600;">لماذا اخترتنا</h3>
+								<p style="line-height: 1.8;font-size:20px">من خلال علاقات شركة تراماكو للتجارة المحلية والخارجية المحدودة الدولية واللوجيستية مع العديد من شركات الطيران وشركات الشحن البحري وشركات الشحن البري استطاعت الشركة اكتساب الخبرات الكبيرة في هذا المجال وخبرات عن الكوادر الادارية في الاستيراد والتصدير بالاضافة الى الفروع المنتشرة في اغلب الدول العربية والاوروبية  مع تقديم افضل خدمة في الامان , والسرعة , والكفأة ,والضمان  </p>
+								<i class="icon-bulb bgicon"></i>
+							</div>
 						</div>
 
-						<div class="col_one_third">
-
-							<div class="heading-block fancy-title nobottomborder title-bottom-border">
-								<h4>لماذا أخترتنا.</h4>
+						<div class="col-lg-4 dark col-padding ohidden" style="background-color: #34495e;">
+							<div>
+								<h3 class="uppercase" style="font-weight: 600;">مهماتنا</h3>
+								<p style="line-height: 1.8;font-size:20px">استلام البضائع من مصادرها بسيارات الشركة المتخصصة في هذا المجال .
+كوادر ذات خبرات عالية في مجال الاستيراد والتصدير والتخليص الجمركي. ضمان كامل من الشركة لسلامة جميع البضائع سواء كانت زجاج او سوائل او موبيليا او اي نوع اخر.
+الاستلام والتسليم ضمن الوقت المحدد والمتوقع للبضائع.
+توفير مصادر شراء للعملاء مما يوفر عليهم عناء البحث عن مصادر المنتجات . امكانية التأمين على جميع انواع البضائع بقيمة كاملة واعطاء العميل بوليصة تأمين بالقيمة المتفق عليها.
+شحن جميع انواع البضائع سواء كانت اوراق ومستندات او أمتعة شخصية او بضائع تجارية ولجميع دول العالم . تامين عروض اسعار تخليص مناسبة ومتابعة عمليات التخليص ونقل داخل الاردن . </p>
+								<i class="icon-cog bgicon"></i>
 							</div>
-
-							<p>نحن على مدى سنوات عديدة من العمل الدؤوب الجاد، والخدمات ذات المستوى العالي في كلاً من الاردن  و تركيا، ومع وضع ارضاء عملائنا ضمن أولويات شركتنا، شركة TRAMACO İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ  تفتخر بكونها أفضل شركة شحن في تركيا اسطنبول لما تقدمه من خدمات الشحن المتكاملة الجوي والبري والبحري لكافة دول العالم بأسعار منافسة وجودة وكفاءة وسرعة وأمان في النقل.</p>
-
 						</div>
 
-						<div class="col_one_third">
-
-							<div class="heading-block fancy-title nobottomborder title-bottom-border">
-								<h4>مهمتنا.</h4>
+						<div class="col-lg-4 dark col-padding ohidden" style="background-color: #e74c3c;">
+							<div>
+								<h3 class="uppercase" style="font-weight: 600;">ميزاتنا</h3>
+								<p style="line-height: 1.8;font-size:20px">نحن شركة تراماكو للتجارة المحلية والخارجية المحدودة معك على مدى 24 ساعة، نحن لا نترك عملائنا وحيدين،. جميع وثائقك في أمان وسرية تامة معنا، مهما كان نوعها تصل إلى المستلم  دون أن يتم فتحها من أي جهة، أمان شحنتك مسؤوليتنا  نستلم شحنتك من اي نقطة في تركيا  ونوصلها لجميع أنحاء العالم، ليس عليك أن تفكر بالمسافة العالم بين يديك اتصل اينما كنت نصلك مع ضمان كامل لشحنتك .</p>
+								<i class="icon-thumbs-up bgicon"></i>
 							</div>
-
-							<p>تعبرشركة TRAMACO في تركيا اسطنبول من افضل شركات الشحن الجوي  في تركيا اسطنبول وذلك نظرا للخبرات الطويلة واراء عملائها كونها وكيلة لعدة شركات طيران فتقوم الشركة بشحن جميع انواع البضائع التجارية و الشخصية ( حقائب  و امتعة شخصية ) من جميع مناطق تركيا الى جميع دول العالم
-
-مع امكانية استلام البضائع والأمتعة الشخصية من اي نقطة في اسطنبول وجميع المناطق  الاخرى في تركيا وتسليمها الى اي مطار او اي عنوان في جميع الدول العالم.</p>
-
-						</div>
-
-						<div class="col_one_third col_last">
-
-							<div class="heading-block fancy-title nobottomborder title-bottom-border">
-									<h4>ماذا نفعل</span>.</h4>
-							</div>
-
-							<p>هل لديك استفسار ما بخصوص شحنتك ؟  نحن شركة TRAMACO İÇ VE DIŞ TİCARET LİMİTED ŞİRKET معك على مدى 24 ساعة، نحن لا نترك عملائنا وحيدين،.
-							جميع وثائقك في أمان معنا، مهما كان نوعها تصل إلى المستلم بأمان وسرية تامة دون أن يتم فتحها من أي جهة، أمان شحنتك مسؤوليتنا !.
-							نستلم شحنتك في مدينة اسطنبول التركية ونوصلها لجميع أنحاء العالم،  ليس عليك أن تفكر بالمسافة العالم بين يديك</p>
-
 						</div>
 
 						<div class="clear"></div>
 
-						<ul class="clients-grid grid-6 nobottommargin clearfix">
-							<li><a href="#"><img src="images/clients/1.png" alt="Clients"></a></li>
-							<li><a href="#"><img src="images/clients/2.png" alt="Clients"></a></li>
-							<li><a href="#"><img src="images/clients/3.png" alt="Clients"></a></li>
-							<li><a href="#"><img src="images/clients/4.png" alt="Clients"></a></li>
-							<li><a href="#"><img src="images/clients/5.png" alt="Clients"></a></li>
-							<li><a href="#"><img src="images/clients/6.png" alt="Clients"></a></li>
 
-						</ul>
-
-					</div>
-					<div class="section dark parallax nobottommargin" style="padding: 80px 0;background-image: url('img/8.jpg');" data-stellar-background-ratio="0.3">
-
-						<div class="container clearfix">
-
-							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
-								<i class="i-plain i-xlarge divcenter nobottommargin icon-code"></i>
-								<div class="counter counter-lined"><span data-from="100" data-to="846" data-refresh-interval="50" data-speed="2000"></span>K+</div>
-								<h5>ساعات</h5>
-							</div>
-
-							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
-								<i class="i-plain i-xlarge divcenter nobottommargin icon-magic"></i>
-								<div class="counter counter-lined"><span data-from="3000" data-to="15360" data-refresh-interval="100" data-speed="2500"></span>+</div>
-								<h5>KBs of HTML Files</h5>
-							</div>
-
-							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="400">
-								<i class="i-plain i-xlarge divcenter nobottommargin icon-file-text"></i>
-								<div class="counter counter-lined"><span data-from="10" data-to="386" data-refresh-interval="25" data-speed="3500"></span>*</div>
-								<h5>No. of Templates</h5>
-							</div>
-
-							<div class="col_one_fourth nobottommargin center col_last" data-animate="bounceIn" data-delay="600">
-								<i class="i-plain i-xlarge divcenter nobottommargin icon-time"></i>
-								<div class="counter counter-lined"><span data-from="60" data-to="1200" data-refresh-interval="30" data-speed="2700"></span>+</div>
-								<h5>Hours of Coding</h5>
-							</div>
-
-						</div>
 
 					</div>
 
-				</section>
-
-				<section id="content">
-
-					<div id="section-work" class="content-wrap">
-						<div class="section nobg topmargin-lg nobottommargin">
-							<div class="container clearfix">
-
-								<div class="col_half nobottommargin center">
-
-									<img src="11.png" alt="Image" data-animate="fadeInLeft">
-
-								</div>
-
-								<div class="col_half nobottommargin col_last">
-
-									<div class="heading-block" style="padding-top: 40px;">
-
-										<h2>الشحن البحري.</h2>
-
-
-									</div>
-
-									<p>تعتبر شركة TRAMACO İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ في تركيا اسطنبول من افضل شركات الشحن البحري  في تركيا اسطنبول
-
-وذلاك نظرا لامكانية توفير حجوزات على متن جميع الخطوط الملاحية والى جميع موانئ العالم وبأفضل الأسعار
-
-سواء للحوايات  ال 20 قدم او الحوايات ال 40 قدم المبردة والعادية
-
-بالاضافة الى امكانية حجز حوايا مخصصة سواء كانت OPEN TOP  او  FLAT RACK او جزء حاوية
-
-أبرز الدول التي نقدم خدماتنا لها:
-شحن بحري من جميع مناطق تركيا  الى السعودية<br>
-شحن بحري من جميع مناطق تركيا  الى الكويت<br>
-شحن بحري من جميع مناطق تركيا  الى قطر<br>
-شحن بحري من جميع مناطق تركيا الى الامارات<br>
-شحن بحري من جميع مناطق تركيا  الى سلطنة عمان<br>
-شحن بحري من جميع مناطق تركيا  الى الاردن<br>
-شحن بحري من جميع مناطق تركيا  الى لبنان<br>
-شحن بحري من جميع مناطق تركيا  الى العراق<br>
-شحن بحري من جميع مناطق تركيا  الى المانيا فرنسا بريطانيا ايطاليا السويد النمسا اميركا.</p>
-
-
-
-								</div>
-
-							</div>
-						</div>
-
-						<div class="section nobg notopmargin noborder bottommargin-sm">
-							<div class="container clearfix">
-
-								<div class="col_half nobottommargin">
-
-									<div class="heading-block" style="padding-top: 40px;">
-
-										<h2>خدماتنا بخصوص الشحن الجوي.</h2>
-
-
-									</div>
-
-									<p>أبرز الدول التي نقدم فيها خدماتنا:
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى السعودية<br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى الكويت<br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى قطر<br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى الامارات <br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى سلطنة عمان <br>
- شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى الاردن<br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى لبنان<br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى العراق<br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى اميركا<br>
-شحن جوي من تركيا اسطنبول او اي منطقة اخرى الى جميع الدول الاوروبية.</p>
-
-
-								</div>
-
-								<div class="col_half bottommargin-sm center col_last">
-
-									<img src="img/10.png" alt="Image" data-animate="fadeInRight">
-
-								</div>
-
-							</div>
-						</div>
-						<div class="section nobg topmargin-lg nobottommargin">
-							<div class="container clearfix">
-
-								<div class="col_half nobottommargin center">
-
-									<img src="img/20.jpeg" style="border-radius: 20px;box-shadow: 16px 16px "alt="Image" data-animate="fadeInLeft">
-
-								</div>
-
-								<div class="col_half nobottommargin col_last">
-
-									<div class="heading-block" style="padding-top: 40px;">
-
-										<h2> بخصوص الشحن البري.</h2>
-
-
-									</div>
-
-									<p>عتبر شركة TRAMACO İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ في تركيا اسطنبول من افضل شركات الشحن البحري  في تركيا اسطنبول
-
-وذلاك نظرا لامكانية توفير حجوزات على متن جميع الخطوط الملاحية والى جميع موانئ العالم وبأفضل الأسعار
-
-سواء للحوايات  ال 20 قدم او الحوايات ال 40 قدم المبردة والعادية
-
-بالاضافة الى امكانية حجز حوايا مخصصة سواء كانت OPEN TOP  او  FLAT RACK او جزء حاوية
-
-أبرز الدول التي نقدم خدماتنا لها:
-شحن بحري من جميع مناطق تركيا  الى السعودية <br>
-شحن بحري من جميع مناطق تركيا  الى الكويت <br>
-شحن بحري من جميع مناطق تركيا  الى قطر <br>
-شحن بحري من جميع مناطق تركيا الى الامارات<br>
-شحن بحري من جميع مناطق تركيا  الى سلطنة عمان<br>
-شحن بحري من جميع مناطق تركيا  الى الاردن<br>
-شحن بحري من جميع مناطق تركيا  الى لبنان<br>
-شحن بحري من جميع مناطق تركيا  الى العراق<br>
-شحن بري من تركيا اسطنبول او اي منطقة اخرى في تركيا الى العراق <br>
-شحن بحري من جميع مناطق تركيا  الى المانيا فرنسا بريطانيا ايطاليا السويد النمسا اميركا.</p>
-
-
-								</div>
-
-							</div>
-						</div>
 					</div>
+					<section>
 
-				</section>
+
+		<!-- services
+		============================================= -->
 
 				<section id="section-services" class="page-section topmargin-lg">
 
@@ -486,91 +390,10 @@
 
 
 
-				<section id="section-testimonials" class="page-section section parallax dark" style="background-image: url('img/2.jpg'); padding: 200px 0;" data-stellar-background-ratio="0.3">
-
-					<div class="container clearfix">
-
-						<div class="col_half nobottommargin">&nbsp;</div>
-
-
-					</div>
-
-				</section>
-
-
-
-			</div>
-
-		</section><!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
 
-
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights">
-
-				<div class="container clearfix">
-
-					<div class="col_half">
-						Copyrights &copy; 2019 All Rights Reserved by Wedo.<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-					</div>
-
-					<div class="col_half col_last tright">
-						<div class="fright clearfix">
-							<a href="#" class="social-icon si-small si-borderless si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-gplus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-pinterest">
-								<i class="icon-pinterest"></i>
-								<i class="icon-pinterest"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-vimeo">
-								<i class="icon-vimeo"></i>
-								<i class="icon-vimeo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-github">
-								<i class="icon-github"></i>
-								<i class="icon-github"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-yahoo">
-								<i class="icon-yahoo"></i>
-								<i class="icon-yahoo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-linkedin">
-								<i class="icon-linkedin"></i>
-								<i class="icon-linkedin"></i>
-							</a>
-						</div>
-
-						<div class="clear"></div>
-
-					</div>
-
-				</div>
-
-			</div><!-- #copyrights end -->
-
-		</footer><!-- #footer end -->
 
 	</div><!-- #wrapper end -->
 
@@ -589,7 +412,14 @@
 
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>
 	<script type="text/javascript" src="js/jquery.gmap.js"></script>
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
 	<script type="text/javascript">
 
 		jQuery('#google-map').gMap({
@@ -619,6 +449,27 @@
 			}
 
 		});
+	</script>
+	<script>
+		/******************************************
+		-	PREPARE PLACEHOLDER FOR SLIDER	-
+		******************************************/
+
+		var revapi;
+		jQuery(document).ready(function() {
+			revapi = jQuery("#rev_slider").revolution({
+				sliderType:"standard",
+				sliderLayout:"fullscreen",
+				fullScreenOffsetContainer:"header",
+				fullScreenOffset:"0",
+				delay:9000,
+				navigation: {
+					arrows:{enable:true}
+				},
+				gridwidth:1230,
+				gridheight:720
+			});
+		});	/*ready*/
 	</script>
 
 </body>
